@@ -4,3 +4,72 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P-Regular", sans-serif;
+  --card-text-weight: 465;
+  --card-title-weight: 785;
+  --bg-color: rgb(0, 0, 0);
+  --accent-color: rgb(0, 204, 20);
+  --bg-images: repeating-linear-gradient(
+      to left,
+      #000000 0 2px,
+      #00000000 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --text-color: var(--accent-color, rgb(0, 204, 20));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: "Inter-Variable", sans-serif;
+    --accent-font: "PressStart2P-Regular", sans-serif;
+    --card-text-weight: 465;
+    --card-title-weight: 785;
+    --bg-color: rgb(0, 0, 0);
+    --accent-color: rgb(0, 204, 20);
+    --bg-images: repeating-linear-gradient(
+        to left,
+        #000000 0 2px,
+        #00000000 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+    --text-color: var(--accent-color, rgb(0, 204, 20));
+  }
+}
+
+:root.theme-light {
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P-Regular", sans-serif;
+  --card-text-weight: 400;
+  --card-title-weight: 700;
+  --bg-color: rgb(255, 255, 255);
+  --accent-color: rgb(0, 0, 0);
+  --text-color: var(--bg-color, rgb(255, 255, 255));
+  --like-contour-color: var(--accent-color, rgb(0, 0, 0));
+  --like-body-color: none;
+  --like-sparks-color: rgb(255, 0, 0);
+  --bg-images:repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: "Inter-Variable", sans-serif;
+    --accent-font: "PressStart2P-Regular", sans-serif;
+    --card-text-weight: 400;
+    --card-title-weight: 700;
+    --bg-color: rgb(255, 255, 255);
+    --accent-color: rgb(0, 0, 0);
+    --text-color: var(--bg-color, rgb(255, 255, 255));
+    --like-contour-color: var(--accent-color, rgb(0, 0, 0));
+    --like-body-color: none;
+    --like-sparks-color: rgb(255, 0, 0);
+    --bg-images:repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  }
+}
