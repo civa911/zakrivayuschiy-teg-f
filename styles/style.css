@@ -226,7 +226,7 @@
 .button_okno {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 14px;
 }
 
@@ -249,7 +249,7 @@
 }
 
 .okno .floppy-icon {
-  inline-size: 39px;
+  inline-size: 78px;
   block-size: 39px;
 }
 
@@ -389,4 +389,11 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.okno-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
 }
