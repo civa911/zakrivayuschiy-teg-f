@@ -9,13 +9,10 @@
   --accent-font: "PressStart2P-Regular", sans-serif;
   --card-text-weight: 465;
   --card-title-weight: 785;
-  --bg-color: rgb(0, 0, 0);
+  --bg-color: #000;
   --accent-color: rgb(0, 204, 20);
-  --bg-images: repeating-linear-gradient(
-      to left,
-      #000000 0 2px,
-      #00000000 2px 4px
-    ),
+  --bg-images: 
+  repeating-linear-gradient(to left,#000000 0 2px,#00000000 2px 4px),
     repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
   --text-color: var(--accent-color, rgb(0, 204, 20));
@@ -27,7 +24,7 @@
     --accent-font: "PressStart2P-Regular", sans-serif;
     --card-text-weight: 465;
     --card-title-weight: 785;
-    --bg-color: rgb(0, 0, 0);
+    --bg-color: #000;
     --accent-color: rgb(0, 204, 20);
     --bg-images: repeating-linear-gradient(
         to left,

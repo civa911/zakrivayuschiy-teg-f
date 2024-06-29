@@ -1,16 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P-Regular", fantasy;
+  --accent-font: "PressStart2P-Regular", sans-serif;
   --card-text-weight: 400;
   --card-title-weight: 700;
   --bg-color: rgb(255, 255, 255);
   --accent-color: rgb(0, 0, 0);
+  --overlay-color: rgba(0, 0, 0, 0.75);
   --text-color: var(--bg-color, rgb(255, 255, 255));
   --like-contour-color: var(--accent-color, rgb(0, 0, 0));
   --like-body-color: none;
-  --like-sparks-color: rgb(255, 0, 0);
-  --bg-images: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  --like-sparks-color: #ff0000;
+  --bg-images: 
+  repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
   repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
   linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --popup-inline-size: clamp(341px, 25%, 357px);
+  --popup-padding: 30px;
+}
+
+@media (width <= 375px) {
+  :root {
+    --popup-inline-size: 91%;
+    --popup-padding: 30px 42px;
+  }
 }
