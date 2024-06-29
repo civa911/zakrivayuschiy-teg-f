@@ -275,7 +275,7 @@
 }
 
 .card:nth-child(1) .card-image {
-  filter: brightness(0.6);
+  filter: brightness(0.6) sepia(90%) grayscale(25%);
 }
 
 .card:nth-child(2) .card-image {
