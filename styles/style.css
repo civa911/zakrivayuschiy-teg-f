@@ -138,14 +138,14 @@
   max-height: clamp(375px, 100%, 700px);
   border-top: 2px solid var(--accent-color);
   aspect-ratio: 1/1;
-
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-label {
